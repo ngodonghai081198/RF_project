@@ -1,0 +1,84 @@
+# PL Clock signal ZYNQ 7010 50 MHz => t = 20x10^-9
+set_property PACKAGE_PIN K17 [get_ports clk]							
+	set_property IOSTANDARD LVCMOS33 [get_ports clk]
+	create_clock -add -name sys_clk_pin -period 20.00 -waveform {0 10} [get_ports clk]
+
+# ----------------------------------------------------------------------------------------------------	
+# V5.0  P15  V15  V17  Y18  Y19  W19  N17  W14  P16  R16  T16  W16  R18  P19  P18  N18  N20  GND  V3.3
+# ----------------------------------------------------------------------------------------------------	
+# GND   U15  W15  U17  V18  W18  U19  U14  Y14  V16  U18  T17  R17  W20  V20  U20  T20  P20  GND  V3.3
+# ----------------------------------------------------------------------------------------------------	
+# PL:  LED1 T12   |   LED2 U12   |   LED3 V12   |   LED4 W13   |   BTN1 M20   |   BTN2 M19
+# ----------------------------------------------------------------------------------------------------
+
+# Poject 4 digit modules 7 segment led
+#-------------------------------------
+# 8 LED modules
+set_property PACKAGE_PIN T17 [get_ports LED[7]]	
+    set_property IOSTANDARD LVCMOS33 [get_ports LED[7]]
+
+set_property PACKAGE_PIN R17 [get_ports LED[6]]	
+    set_property IOSTANDARD LVCMOS33 [get_ports LED[6]]
+
+set_property PACKAGE_PIN W20 [get_ports LED[5]]	
+    set_property IOSTANDARD LVCMOS33 [get_ports LED[5]]
+
+set_property PACKAGE_PIN V20 [get_ports LED[4]]	
+    set_property IOSTANDARD LVCMOS33 [get_ports LED[4]]
+
+set_property PACKAGE_PIN U20 [get_ports LED[3]]	
+    set_property IOSTANDARD LVCMOS33 [get_ports LED[3]]
+
+set_property PACKAGE_PIN T20 [get_ports LED[2]]	
+    set_property IOSTANDARD LVCMOS33 [get_ports LED[2]]
+
+set_property PACKAGE_PIN P18 [get_ports LED[1]]	
+    set_property IOSTANDARD LVCMOS33 [get_ports LED[1]]
+
+set_property PACKAGE_PIN N18 [get_ports LED[0]]	
+    set_property IOSTANDARD LVCMOS33 [get_ports LED[0]]
+    
+#-------------------------------------
+# LCD ST7735 module
+set_property PACKAGE_PIN P16 [get_ports LCD_CS]	
+    set_property IOSTANDARD LVCMOS33 [get_ports LCD_CS]
+
+set_property PACKAGE_PIN R16 [get_ports LCD_RST]	
+    set_property IOSTANDARD LVCMOS33 [get_ports LCD_RST]
+
+set_property PACKAGE_PIN T16 [get_ports LCD_DCX]	
+    set_property IOSTANDARD LVCMOS33 [get_ports LCD_DCX]
+
+set_property PACKAGE_PIN W16 [get_ports LCD_SDA]	
+    set_property IOSTANDARD LVCMOS33 [get_ports LCD_SDA]
+
+set_property PACKAGE_PIN R18 [get_ports LCD_SCK]	
+    set_property IOSTANDARD LVCMOS33 [get_ports LCD_SCK]
+
+set_property PACKAGE_PIN P19 [get_ports LCD_LED]	
+    set_property IOSTANDARD LVCMOS33 [get_ports LCD_LED]
+    
+
+
+
+
+## LED and Button
+#set_property PACKAGE_PIN T12 [get_ports {LED[1]}]	
+#    set_property IOSTANDARD LVCMOS33 [get_ports {LED[1]}]
+
+#set_property PACKAGE_PIN U12 [get_ports {LED[0]}]	
+#    set_property IOSTANDARD LVCMOS33 [get_ports {LED[0]}]
+    
+#set_property PACKAGE_PIN V12 [get_ports {LED[2]}]	
+#    set_property IOSTANDARD LVCMOS33 [get_ports {LED[2]}]
+
+#set_property PACKAGE_PIN W13 [get_ports {LED[3]}]	
+#    set_property IOSTANDARD LVCMOS33 [get_ports {LED[3]}]
+
+set_property PACKAGE_PIN M20 [get_ports {rst_n}]	
+    set_property IOSTANDARD LVCMOS33 [get_ports {rst_n}]
+
+#set_property PACKAGE_PIN M19 [get_ports {start_btn}]	
+#    set_property IOSTANDARD LVCMOS33 [get_ports {start_btn}]
+
+#--------------------------------------------------------
