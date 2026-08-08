@@ -40,11 +40,11 @@ set_property PACKAGE_PIN N18 [get_ports LED[0]]
     
 #-------------------------------------
 # LCD ST7735 module
-set_property PACKAGE_PIN P16 [get_ports LCD_CS]	
-    set_property IOSTANDARD LVCMOS33 [get_ports LCD_CS]
+set_property PACKAGE_PIN P16 [get_ports LCD_CSX]	
+    set_property IOSTANDARD LVCMOS33 [get_ports LCD_CSX]
 
-set_property PACKAGE_PIN R16 [get_ports LCD_RST]	
-    set_property IOSTANDARD LVCMOS33 [get_ports LCD_RST]
+set_property PACKAGE_PIN R16 [get_ports LCD_RESX]	
+    set_property IOSTANDARD LVCMOS33 [get_ports LCD_RESX]
 
 set_property PACKAGE_PIN T16 [get_ports LCD_DCX]	
     set_property IOSTANDARD LVCMOS33 [get_ports LCD_DCX]

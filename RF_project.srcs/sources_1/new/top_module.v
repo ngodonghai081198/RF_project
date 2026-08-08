@@ -5,8 +5,8 @@ module top_module(
     input wire rst_n,
     output reg [7:0] LED = 8'b10101010,
     
-    output reg LCD_CS,
-    output reg LCD_RST,
+    output reg LCD_CSX,
+    output reg LCD_RESX,
     output reg LCD_DCX,
     output reg LCD_SDA,
     output reg LCD_SCK,
@@ -19,8 +19,8 @@ module top_module(
     always @(posedge clk) begin
     
         // Initial value
-        LCD_CS <= 1'b1;
-        LCD_RST <= 1'b1;
+        LCD_CSX <= 1'b1;
+        LCD_RESX <= 1'b1;
         LCD_DCX <= 1'b0;
         LCD_SDA <= 1'b0;
         LCD_LED <= 1'b1;
