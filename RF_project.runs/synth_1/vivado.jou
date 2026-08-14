@@ -3,8 +3,8 @@
 # SW Build 6140274 on Wed May 21 22:58:25 MDT 2025
 # IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
 # SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
-# Start of session at: Tue Jul 28 16:46:22 2026
-# Process ID         : 28298
+# Start of session at: Fri Aug 14 01:59:13 2026
+# Process ID         : 207969
 # Current directory  : /home/mysimp/RF_project/RF_project.runs/synth_1
 # Command line       : vivado -log top_module.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_module.tcl
 # Log file           : /home/mysimp/RF_project/RF_project.runs/synth_1/top_module.vds
@@ -13,12 +13,12 @@
 # Platform           : Debian
 # Operating System   : Debian GNU/Linux 13 (trixie)
 # Processor Detail   : 13th Gen Intel(R) Core(TM) i5-13420H
-# CPU Frequency      : 3217.816 MHz
+# CPU Frequency      : 463.764 MHz
 # CPU Physical cores : 8
 # CPU Logical cores  : 12
 # Host memory        : 16486 MB
 # Swap memory        : 16889 MB
 # Total Virtual      : 33375 MB
-# Available Virtual  : 28007 MB
+# Available Virtual  : 29581 MB
 #-----------------------------------------------------------
 source top_module.tcl -notrace

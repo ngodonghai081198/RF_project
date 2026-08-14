@@ -73,7 +73,11 @@ set_property ip_output_repo /home/mysimp/RF_project/RF_project.cache/ip [current
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_verilog -library xil_defaultlib /home/mysimp/RF_project/RF_project.srcs/sources_1/new/top_module.v
+read_verilog -library xil_defaultlib {
+  /home/mysimp/RF_project/RF_project.srcs/sources_1/new/LCD_ST7735.v
+  /home/mysimp/RF_project/RF_project.srcs/sources_1/new/clk_module.v
+  /home/mysimp/RF_project/RF_project.srcs/sources_1/new/top_module.v
+}
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the

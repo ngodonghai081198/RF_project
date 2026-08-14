@@ -102,6 +102,23 @@ set_property PACKAGE_PIN M20 [get_ports {rst_n}]
 
 
 
+#-------------------------------------
+# Simulation
+
+    + xvlog --sv *.sv
+
+    + xelab work.name_of_simulation    -debug typical    -s tb_sim
+
+    + xsim tb_sim -gui
+
+    + all_wave *
+
+    + run all
+
+
+
+
+
 
 
 
