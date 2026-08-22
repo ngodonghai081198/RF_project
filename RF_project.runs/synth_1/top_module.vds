@@ -1,0 +1,420 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Wed May 21 22:58:25 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Sat Aug 22 10:25:43 2026
+# Process ID         : 5593
+# Current directory  : /home/mysimp/RF_project/RF_project.runs/synth_1
+# Command line       : vivado -log top_module.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_module.tcl
+# Log file           : /home/mysimp/RF_project/RF_project.runs/synth_1/top_module.vds
+# Journal file       : /home/mysimp/RF_project/RF_project.runs/synth_1/vivado.jou
+# Running On         : 192
+# Platform           : Debian
+# Operating System   : Debian GNU/Linux 13 (trixie)
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i5-13420H
+# CPU Frequency      : 3800.000 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 12
+# Host memory        : 16486 MB
+# Swap memory        : 16889 MB
+# Total Virtual      : 33375 MB
+# Available Virtual  : 29195 MB
+#-----------------------------------------------------------
+source top_module.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/mysimp/V_SOCproject/project_1'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/mysimp/Documents/vivado/2025.1/Vivado/data/ip'.
+Command: read_checkpoint -auto_incremental -incremental /home/mysimp/RF_project/RF_project.srcs/utils_1/imports/synth_1/top_module.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/mysimp/RF_project/RF_project.srcs/utils_1/imports/synth_1/top_module.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top top_module -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 5646
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2114.059 ; gain = 438.742 ; free physical = 6620 ; free virtual = 26569
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11241] undeclared symbol 's_axi_aclk', assumed default net type 'wire' [/home/mysimp/RF_project/RF_project.srcs/sources_1/new/top_module.v:49]
+INFO: [Synth 8-6157] synthesizing module 'top_module' [/home/mysimp/RF_project/RF_project.srcs/sources_1/new/top_module.v:3]
+INFO: [Synth 8-6157] synthesizing module 'clk_module' [/home/mysimp/RF_project/RF_project.srcs/sources_1/new/clk_module.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'clk_module' (0#1) [/home/mysimp/RF_project/RF_project.srcs/sources_1/new/clk_module.v:3]
+INFO: [Synth 8-6157] synthesizing module 'LCD_ST7735' [/home/mysimp/RF_project/RF_project.srcs/sources_1/new/LCD_ST7735.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/mysimp/RF_project/RF_project.srcs/sources_1/new/LCD_ST7735.v:151]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/mysimp/RF_project/RF_project.srcs/sources_1/new/LCD_ST7735.v:169]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/mysimp/RF_project/RF_project.srcs/sources_1/new/LCD_ST7735.v:185]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/mysimp/RF_project/RF_project.srcs/sources_1/new/LCD_ST7735.v:148]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/mysimp/RF_project/RF_project.srcs/sources_1/new/LCD_ST7735.v:205]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/mysimp/RF_project/RF_project.srcs/sources_1/new/LCD_ST7735.v:242]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/mysimp/RF_project/RF_project.srcs/sources_1/new/LCD_ST7735.v:279]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/mysimp/RF_project/RF_project.srcs/sources_1/new/LCD_ST7735.v:318]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/mysimp/RF_project/RF_project.srcs/sources_1/new/LCD_ST7735.v:419]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/mysimp/RF_project/RF_project.srcs/sources_1/new/LCD_ST7735.v:386]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/mysimp/RF_project/RF_project.srcs/sources_1/new/LCD_ST7735.v:472]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/mysimp/RF_project/RF_project.srcs/sources_1/new/LCD_ST7735.v:439]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/mysimp/RF_project/RF_project.srcs/sources_1/new/LCD_ST7735.v:493]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/mysimp/RF_project/RF_project.srcs/sources_1/new/LCD_ST7735.v:143]
+INFO: [Synth 8-6155] done synthesizing module 'LCD_ST7735' (0#1) [/home/mysimp/RF_project/RF_project.srcs/sources_1/new/LCD_ST7735.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'top_module' (0#1) [/home/mysimp/RF_project/RF_project.srcs/sources_1/new/top_module.v:3]
+WARNING: [Synth 8-3848] Net s_axi_aclk in module/entity top_module does not have driver. [/home/mysimp/RF_project/RF_project.srcs/sources_1/new/top_module.v:49]
+WARNING: [Synth 8-3848] Net s_axi_aclk in module/entity top_module does not have driver. [/home/mysimp/RF_project/RF_project.srcs/sources_1/new/top_module.v:49]
+WARNING: [Synth 8-7129] Port rst_n in module LCD_ST7735 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2192.996 ; gain = 517.680 ; free physical = 6543 ; free virtual = 26495
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2210.809 ; gain = 535.492 ; free physical = 6531 ; free virtual = 26483
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2210.809 ; gain = 535.492 ; free physical = 6531 ; free virtual = 26483
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2210.809 ; gain = 0.000 ; free physical = 6531 ; free virtual = 26483
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/mysimp/RF_project/RF_project.srcs/constrs_1/new/Hai_constraint.xdc]
+Finished Parsing XDC File [/home/mysimp/RF_project/RF_project.srcs/constrs_1/new/Hai_constraint.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/mysimp/RF_project/RF_project.srcs/constrs_1/new/Hai_constraint.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_module_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_module_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/mysimp/RF_project/RF_project.srcs/constrs_1/new/Minh_constraints.xdc]
+Finished Parsing XDC File [/home/mysimp/RF_project/RF_project.srcs/constrs_1/new/Minh_constraints.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2331.547 ; gain = 0.000 ; free physical = 6494 ; free virtual = 26461
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2331.582 ; gain = 0.000 ; free physical = 6493 ; free virtual = 26461
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2331.582 ; gain = 656.266 ; free physical = 6493 ; free virtual = 26461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2339.551 ; gain = 664.234 ; free physical = 6493 ; free virtual = 26461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2339.551 ; gain = 664.234 ; free physical = 6493 ; free virtual = 26461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Preparing Guide Design
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6895] The reference checkpoint /home/mysimp/RF_project/RF_project.srcs/utils_1/imports/synth_1/top_module.dcp is not suitable for use with incremental synthesis for this design. Please regenerate the checkpoint for this design with -incremental_synth switch in the same Vivado session that synth_design has been run. Synthesis will continue with the default flow
+---------------------------------------------------------------------------------
+Finished Doing Graph Differ : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2339.551 ; gain = 664.234 ; free physical = 6543 ; free virtual = 26513
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Preparing Guide Design : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2339.551 ; gain = 664.234 ; free physical = 6543 ; free virtual = 26513
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'POWER_ON_state_reg' in module 'LCD_ST7735'
+INFO: [Synth 8-802] inferred FSM for state register 'LCD_state_reg' in module 'LCD_ST7735'
+INFO: [Synth 8-802] inferred FSM for state register 'SWRESET_state_reg' in module 'LCD_ST7735'
+INFO: [Synth 8-802] inferred FSM for state register 'SPLOUT_state_reg' in module 'LCD_ST7735'
+INFO: [Synth 8-802] inferred FSM for state register 'COLMOD_state_reg' in module 'LCD_ST7735'
+INFO: [Synth 8-802] inferred FSM for state register 'MADCTL_state_reg' in module 'LCD_ST7735'
+INFO: [Synth 8-802] inferred FSM for state register 'CASET_state_reg' in module 'LCD_ST7735'
+INFO: [Synth 8-802] inferred FSM for state register 'RASET_state_reg' in module 'LCD_ST7735'
+INFO: [Synth 8-802] inferred FSM for state register 'RAMWR_state_reg' in module 'LCD_ST7735'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               RAMWR_cmd |                              001 |                               00
+             RAMWR_cmdwr |                              010 |                               01
+            RAMWR_datawr |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'RAMWR_state_reg' using encoding 'one-hot' in module 'LCD_ST7735'
+WARNING: [Synth 8-12595] Onehot encoded FSM with state register 'RAMWR_state_reg' is not having reset. This may cause incorrect behavior. User should consider using FSM_SAFE_STATE attribute on the register
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               RASET_cmd |                              001 |                               00
+             RASET_cmdwr |                              010 |                               01
+            RASET_datawr |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'RASET_state_reg' using encoding 'one-hot' in module 'LCD_ST7735'
+WARNING: [Synth 8-12595] Onehot encoded FSM with state register 'RASET_state_reg' is not having reset. This may cause incorrect behavior. User should consider using FSM_SAFE_STATE attribute on the register
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               CASET_cmd |                              001 |                               00
+             CASET_cmdwr |                              010 |                               01
+            CASET_datawr |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'CASET_state_reg' using encoding 'one-hot' in module 'LCD_ST7735'
+WARNING: [Synth 8-12595] Onehot encoded FSM with state register 'CASET_state_reg' is not having reset. This may cause incorrect behavior. User should consider using FSM_SAFE_STATE attribute on the register
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              MADCTL_cmd |                              001 |                               00
+            MADCTL_cmdwr |                              010 |                               01
+           MADCTL_datawr |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'MADCTL_state_reg' using encoding 'one-hot' in module 'LCD_ST7735'
+WARNING: [Synth 8-12595] Onehot encoded FSM with state register 'MADCTL_state_reg' is not having reset. This may cause incorrect behavior. User should consider using FSM_SAFE_STATE attribute on the register
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              COLMOD_cmd |                              001 |                               00
+            COLMOD_cmdwr |                              010 |                               01
+           COLMOD_datawr |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'COLMOD_state_reg' using encoding 'one-hot' in module 'LCD_ST7735'
+WARNING: [Synth 8-12595] Onehot encoded FSM with state register 'COLMOD_state_reg' is not having reset. This may cause incorrect behavior. User should consider using FSM_SAFE_STATE attribute on the register
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              SPLOUT_cmd |                              001 |                               00
+            SPLOUT_cmdwr |                              010 |                               01
+             SPLOUT_wait |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'SPLOUT_state_reg' using encoding 'one-hot' in module 'LCD_ST7735'
+WARNING: [Synth 8-12595] Onehot encoded FSM with state register 'SPLOUT_state_reg' is not having reset. This may cause incorrect behavior. User should consider using FSM_SAFE_STATE attribute on the register
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+             SWRESET_cmd |                              001 |                               00
+           SWRESET_cmdwr |                              010 |                               01
+            SWRESET_wait |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'SWRESET_state_reg' using encoding 'one-hot' in module 'LCD_ST7735'
+WARNING: [Synth 8-12595] Onehot encoded FSM with state register 'SWRESET_state_reg' is not having reset. This may cause incorrect behavior. User should consider using FSM_SAFE_STATE attribute on the register
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+        POWER_ON_initial |                              001 |                               00
+          POWER_ON_reset |                              010 |                               01
+           POWER_ON_wait |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'POWER_ON_state_reg' using encoding 'one-hot' in module 'LCD_ST7735'
+WARNING: [Synth 8-12595] Onehot encoded FSM with state register 'POWER_ON_state_reg' is not having reset. This may cause incorrect behavior. User should consider using FSM_SAFE_STATE attribute on the register
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                POWER_ON |                             0000 |                             0000
+                 SWRESET |                             0001 |                             0001
+                  SPLOUT |                             0010 |                             0010
+                  COLMOD |                             0011 |                             0011
+                  MADCTL |                             0100 |                             0100
+                  DISPON |                             0101 |                             0101
+                   CASET |                             0110 |                             0110
+                   RASET |                             0111 |                             0111
+                   RAMWR |                             1000 |                             1000
+                CMD_WAIT |                             1001 |                             1001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'LCD_state_reg' using encoding 'sequential' in module 'LCD_ST7735'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2339.551 ; gain = 664.234 ; free physical = 6543 ; free virtual = 26512
+---------------------------------------------------------------------------------
+
+
+Incremental Synthesis Report Summary:
+
+1. Incremental synthesis run: no
+
+   Reason for not running incremental synthesis : 
+
+
+INFO: [Synth 8-7130] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   21 Bit       Adders := 1     
+	   2 Input   16 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 1     
++---Registers : 
+	               21 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input   21 Bit        Muxes := 2     
+	   3 Input   21 Bit        Muxes := 1     
+	  10 Input   21 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 1     
+	   3 Input   16 Bit        Muxes := 6     
+	  10 Input   16 Bit        Muxes := 2     
+	   3 Input    8 Bit        Muxes := 5     
+	   2 Input    8 Bit        Muxes := 2     
+	   4 Input    8 Bit        Muxes := 2     
+	  10 Input    8 Bit        Muxes := 2     
+	  10 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 1     
+	   3 Input    1 Bit        Muxes := 37    
+	   2 Input    1 Bit        Muxes := 4     
+	   4 Input    1 Bit        Muxes := 1     
+	  10 Input    1 Bit        Muxes := 21    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3917] design top_module has port LCD_LED driven by constant 1
+WARNING: [Synth 8-7129] Port rst_n in module top_module is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2339.551 ; gain = 664.234 ; free physical = 6543 ; free virtual = 26519
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2384.551 ; gain = 709.234 ; free physical = 6487 ; free virtual = 26470
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2384.551 ; gain = 709.234 ; free physical = 6487 ; free virtual = 26470
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (dut_LCD_ST7735/FSM_onehot_RAMWR_state_reg[2]) is unused and will be removed from module top_module.
+WARNING: [Synth 8-3332] Sequential element (dut_LCD_ST7735/FSM_onehot_RAMWR_state_reg[1]) is unused and will be removed from module top_module.
+WARNING: [Synth 8-3332] Sequential element (dut_LCD_ST7735/FSM_onehot_RAMWR_state_reg[0]) is unused and will be removed from module top_module.
+WARNING: [Synth 8-3332] Sequential element (dut_LCD_ST7735/FSM_onehot_RASET_state_reg[2]) is unused and will be removed from module top_module.
+WARNING: [Synth 8-3332] Sequential element (dut_LCD_ST7735/FSM_onehot_RASET_state_reg[1]) is unused and will be removed from module top_module.
+WARNING: [Synth 8-3332] Sequential element (dut_LCD_ST7735/FSM_onehot_RASET_state_reg[0]) is unused and will be removed from module top_module.
+WARNING: [Synth 8-3332] Sequential element (dut_LCD_ST7735/FSM_onehot_CASET_state_reg[2]) is unused and will be removed from module top_module.
+WARNING: [Synth 8-3332] Sequential element (dut_LCD_ST7735/FSM_onehot_CASET_state_reg[1]) is unused and will be removed from module top_module.
+WARNING: [Synth 8-3332] Sequential element (dut_LCD_ST7735/FSM_onehot_CASET_state_reg[0]) is unused and will be removed from module top_module.
+WARNING: [Synth 8-3332] Sequential element (dut_LCD_ST7735/FSM_onehot_MADCTL_state_reg[2]) is unused and will be removed from module top_module.
+WARNING: [Synth 8-3332] Sequential element (dut_LCD_ST7735/FSM_onehot_MADCTL_state_reg[1]) is unused and will be removed from module top_module.
+WARNING: [Synth 8-3332] Sequential element (dut_LCD_ST7735/FSM_onehot_MADCTL_state_reg[0]) is unused and will be removed from module top_module.
+WARNING: [Synth 8-3332] Sequential element (dut_LCD_ST7735/FSM_onehot_COLMOD_state_reg[2]) is unused and will be removed from module top_module.
+WARNING: [Synth 8-3332] Sequential element (dut_LCD_ST7735/FSM_onehot_COLMOD_state_reg[1]) is unused and will be removed from module top_module.
+WARNING: [Synth 8-3332] Sequential element (dut_LCD_ST7735/FSM_onehot_COLMOD_state_reg[0]) is unused and will be removed from module top_module.
+WARNING: [Synth 8-3332] Sequential element (dut_LCD_ST7735/FSM_onehot_SPLOUT_state_reg[2]) is unused and will be removed from module top_module.
+WARNING: [Synth 8-3332] Sequential element (dut_LCD_ST7735/FSM_onehot_SPLOUT_state_reg[1]) is unused and will be removed from module top_module.
+WARNING: [Synth 8-3332] Sequential element (dut_LCD_ST7735/FSM_onehot_SPLOUT_state_reg[0]) is unused and will be removed from module top_module.
+WARNING: [Synth 8-3332] Sequential element (dut_LCD_ST7735/FSM_onehot_SWRESET_state_reg[2]) is unused and will be removed from module top_module.
+WARNING: [Synth 8-3332] Sequential element (dut_LCD_ST7735/FSM_onehot_SWRESET_state_reg[1]) is unused and will be removed from module top_module.
+WARNING: [Synth 8-3332] Sequential element (dut_LCD_ST7735/FSM_onehot_SWRESET_state_reg[0]) is unused and will be removed from module top_module.
+WARNING: [Synth 8-3332] Sequential element (dut_LCD_ST7735/FSM_onehot_POWER_ON_state_reg[2]) is unused and will be removed from module top_module.
+WARNING: [Synth 8-3332] Sequential element (dut_LCD_ST7735/FSM_onehot_POWER_ON_state_reg[1]) is unused and will be removed from module top_module.
+WARNING: [Synth 8-3332] Sequential element (dut_LCD_ST7735/FSM_onehot_POWER_ON_state_reg[0]) is unused and will be removed from module top_module.
+WARNING: [Synth 8-3332] Sequential element (dut_LCD_ST7735/FSM_sequential_LCD_state_reg[3]) is unused and will be removed from module top_module.
+WARNING: [Synth 8-3332] Sequential element (dut_LCD_ST7735/FSM_sequential_LCD_state_reg[2]) is unused and will be removed from module top_module.
+WARNING: [Synth 8-3332] Sequential element (dut_LCD_ST7735/FSM_sequential_LCD_state_reg[1]) is unused and will be removed from module top_module.
+WARNING: [Synth 8-3332] Sequential element (dut_LCD_ST7735/FSM_sequential_LCD_state_reg[0]) is unused and will be removed from module top_module.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2413.598 ; gain = 738.281 ; free physical = 6459 ; free virtual = 26442
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2568.410 ; gain = 893.094 ; free physical = 6319 ; free virtual = 26303
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2568.410 ; gain = 893.094 ; free physical = 6319 ; free virtual = 26303
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2568.410 ; gain = 893.094 ; free physical = 6319 ; free virtual = 26303
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2568.410 ; gain = 893.094 ; free physical = 6319 ; free virtual = 26303
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2568.410 ; gain = 893.094 ; free physical = 6319 ; free virtual = 26303
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2568.410 ; gain = 893.094 ; free physical = 6319 ; free virtual = 26303
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |OBUF |    14|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2568.410 ; gain = 893.094 ; free physical = 6319 ; free virtual = 26303
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 1 critical warnings and 39 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2568.410 ; gain = 772.320 ; free physical = 6319 ; free virtual = 26303
+Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2568.418 ; gain = 893.094 ; free physical = 6319 ; free virtual = 26303
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2568.418 ; gain = 0.000 ; free physical = 6319 ; free virtual = 26303
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2568.418 ; gain = 0.000 ; free physical = 6495 ; free virtual = 26481
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: adc145f7
+INFO: [Common 17-83] Releasing license: Synthesis
+58 Infos, 42 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 2568.445 ; gain = 1032.699 ; free physical = 6495 ; free virtual = 26480
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1762.452; main = 1761.811; forked = 275.567
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3295.223; main = 2568.410; forked = 955.672
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2592.422 ; gain = 0.000 ; free physical = 6495 ; free virtual = 26480
+INFO: [Common 17-1381] The checkpoint '/home/mysimp/RF_project/RF_project.runs/synth_1/top_module.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file top_module_utilization_synth.rpt -pb top_module_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Aug 22 10:26:07 2026...

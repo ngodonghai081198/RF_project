@@ -1,0 +1,7 @@
+LCD_ST7735.v,verilog,xil_defaultlib,../../../../RF_project.gen/sources_1/ip/LCD_AXI4_lite_3_0/src/LCD_ST7735.v,incdir="../../../../../Documents/vivado/2025.1/data/rsb/busdef"
+clk_module.v,verilog,xil_defaultlib,../../../../RF_project.gen/sources_1/ip/LCD_AXI4_lite_3_0/src/clk_module.v,incdir="../../../../../Documents/vivado/2025.1/data/rsb/busdef"
+top_module.v,verilog,xil_defaultlib,../../../../RF_project.gen/sources_1/ip/LCD_AXI4_lite_3_0/src/top_module.v,incdir="../../../../../Documents/vivado/2025.1/data/rsb/busdef"
+LCD_AXI4_lite_3_top_module_0_0.v,verilog,xil_defaultlib,../../../../RF_project.gen/sources_1/ip/LCD_AXI4_lite_3_0/sim/LCD_AXI4_lite_3_top_module_0_0.v,incdir="../../../../../Documents/vivado/2025.1/data/rsb/busdef"
+LCD_AXI4_lite_3.v,verilog,xil_defaultlib,../../../../RF_project.gen/sources_1/ip/LCD_AXI4_lite_3_0/sim/LCD_AXI4_lite_3.v,incdir="../../../../../Documents/vivado/2025.1/data/rsb/busdef"
+LCD_AXI4_lite_3_0.v,verilog,xil_defaultlib,../../../../RF_project.gen/sources_1/ip/LCD_AXI4_lite_3_0/sim/LCD_AXI4_lite_3_0.v,incdir="../../../../../Documents/vivado/2025.1/data/rsb/busdef"
+glbl.v,Verilog,xil_defaultlib,glbl.v

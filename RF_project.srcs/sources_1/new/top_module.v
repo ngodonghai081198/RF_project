@@ -1,8 +1,31 @@
 `timescale 1ns / 1ps
 
 module top_module(
-    input wire clk,
-    input wire rst_n,
+    // AXI4-Lite Interface
+    input  wire        s_axi_aclk,
+    input  wire        s_axi_aresetn,
+    input  wire [3:0]  s_axi_awaddr,
+    input  wire [2:0]  s_axi_awprot,
+    input  wire        s_axi_awvalid,
+    output wire        s_axi_awready,
+    input  wire [31:0] s_axi_wdata,
+    input  wire [3:0]  s_axi_wstrb,
+    input  wire        s_axi_wvalid,
+    output wire        s_axi_wready,
+    output wire [1:0]  s_axi_bresp,
+    output wire        s_axi_bvalid,
+    input  wire        s_axi_bready,
+    input  wire [3:0]  s_axi_araddr,
+    input  wire [2:0]  s_axi_arprot,
+    input  wire        s_axi_arvalid,
+    output wire        s_axi_arready,
+    output reg  [31:0] s_axi_rdata,
+    output wire [1:0]  s_axi_rresp,
+    output wire        s_axi_rvalid,
+    input  wire        s_axi_rready,
+
+//    input wire clk,
+//    input wire rst_n,
     output wire [7:0] LED,
     
     output wire LCD_CSX,
@@ -17,13 +40,13 @@ module top_module(
     
     reg [9:0] counter = 10'd3;
     
-    always @(posedge clk) begin
+    always @(posedge s_axi_aclk) begin
         if (counter > 0) counter <= counter - 1;
         else counter <= 3;
     end
     
     clk_module dut_clk_module(
-        .clk(clk),
+        .clk(s_axi_aclk),
         .LCD_SCK(LCD_SCK),
         .counter(counter)
     );
@@ -53,7 +76,7 @@ module top_module(
 //    end
     
     LCD_ST7735 dut_LCD_ST7735(
-        .clk(clk),
+        .clk(s_axi_aclk),
         .counter_top(counter),
         .rst_n(rst_n),
         .LCD_SCK(LCD_SCK),

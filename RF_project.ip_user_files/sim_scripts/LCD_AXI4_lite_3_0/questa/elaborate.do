@@ -1,0 +1,1 @@
+vopt -64 -l elaborate.log +acc=npr -suppress 10016  -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -work xil_defaultlib xil_defaultlib.LCD_AXI4_lite_3_0 xil_defaultlib.glbl -o LCD_AXI4_lite_3_0_opt
